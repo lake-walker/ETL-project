@@ -36,7 +36,7 @@ govt_corruption: The extent to which Perception of Corruption contributes to Hap
 
 generosity: The extent to which Generosity contributed to the calculation of the Happiness Score.
 
-dystopia_residual: The extent to which Dystopia Residual contributed to the calculation of the Happiness Score.
+dystopia_residual: The dystopia residual acts as a sort of control variable. The worst country imaginably, no country is worse than dystopia. 
 
 Data Transformation:
 	
