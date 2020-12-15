@@ -26,13 +26,17 @@ Here is a list of what the diffferent metrics mean:
 
 happiness_score: A metric measured in 2015 & 2016 by asking the sampled people the question: "How would you rate your happiness on a scale of 0 to 10 where 10 is the happiest."
 
-family: The extent to which Family contributes to the calculation of the Happiness Score
+family: The extent to which Family contributes to the calculation of the Happiness Score.
 
-life_expectancy: The extent to which Life expectancy contributed to the calculation of the Happiness Score
+life_expectancy: The extent to which Life expectancy contributed to the calculation of the Happiness Score.
 
 freedom: The extent to which Freedom contributed to the calculation of the Happiness Score.
 
-trust: The extent to which Perception of Corruption contributes to Happiness Score.
+govt_corruption: The extent to which Perception of Corruption contributes to Happiness Score.
+
+generosity: The extent to which Generosity contributed to the calculation of the Happiness Score.
+
+dystopia_residual: The extent to which Dystopia Residual contributed to the calculation of the Happiness Score.
 
 Data Transformation:
 	
