@@ -77,4 +77,4 @@ CREATE TABLE country (
 -- Import data into data tables 
 -- SELECT * FROM age
 
-DROP TABLE age, country, generation, happiness, region, sex, suicide;
+-- DROP TABLE age, country, generation, happiness, region, sex, suicide;
