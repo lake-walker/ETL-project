@@ -22,9 +22,25 @@ For this assignment I decided to look at the Global Happiness Index. I wanted to
 	
 The happiness index data was divided by year starting in 2015 and going through 2019. The happiness index is a relatively new global index and therefore doesn’t date back as far as the suicide rate data. Similarly, the suicide rate data only went up to 2016, potentially due to lags in data submission. In total I acquired all the happiness index data for years 2015-2019 and the full dataset of suicide rate data.
 
+Here is a list of what the diffferent metrics mean:
+
+happiness_score: A metric measured in 2015 & 2016 by asking the sampled people the question: "How would you rate your happiness on a scale of 0 to 10 where 10 is the happiest."
+
+family: The extent to which Family contributes to the calculation of the Happiness Score.
+
+life_expectancy: The extent to which Life expectancy contributed to the calculation of the Happiness Score.
+
+freedom: The extent to which Freedom contributed to the calculation of the Happiness Score.
+
+govt_corruption: The extent to which Perception of Corruption contributes to Happiness Score.
+
+generosity: The extent to which Generosity contributed to the calculation of the Happiness Score.
+
+dystopia_residual: The dystopia residual acts as a sort of control variable. The worst country imaginably, no country is worse than dystopia. 
+
 Data Transformation:
 	
-Moving into data transformation, the main problem was getting data that had consistent years. The two datasets only overlap in the years 2015 and 2016. Those will be the two years that will be loaded into the database. I started by importing the happiness index data that was already divided by year. For the suicide data I had to create two new dataframes splitting the data by year, 2015 and 2016. Having split the suicide rate data into two new dataframes I could then merge the happiness data into the suicide data by country. This allowed for full country happiness index data to be linked with each country by year. After merging the four dataframes into two dataframes split by year, I concated the two new dataframes into one large dataframe. This final dataframe is what will be uploaded into MongoDB. Finally, I removed all the unnecessary or redundant columns that still existed.
+Moving into data transformation, the main problem was getting data that had consistent years. The two datasets only overlap in the years 2015 and 2016. Those will be the two years that will be loaded into the database. I started by importing the happiness index data that was already divided by year. For the suicide data I had to create two new dataframes splitting the data by year, 2015 and 2016. Having split the suicide rate data into two new dataframes I could then merge the happiness data into the suicide data by country. This allowed for full country happiness index data to be linked with each country by year. After merging the four dataframes into two dataframes split by year, I concated the two new dataframes into one large dataframe. This final dataframe is what will be uploaded into MongoDB. I then removed all the unnecessary or redundant columns that still existed. I finished up by renaming the columns to be better queried for analysis later.
 
 Data Loading:
 	
